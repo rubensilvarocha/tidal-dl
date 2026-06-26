@@ -16,12 +16,12 @@ __KEYS_JSON__ = '''
     "version": "1.0.1",
     "keys": [
         {
-            "platform": "Fire TV",
+            "platform": "New API key",
             "formats": "Normal/High/HiFi(No Master)",
-            "clientId": "OmDtrzFgyVVL6uW56OnFA2COiabqm",
-            "clientSecret": "zxen1r3pO0hgtOC7j6twMo9UAqngGrmRiWpV7QC1zJ8=",
-            "valid": "False",
-            "from": "Fokka-Engineering (https://github.com/Fokka-Engineering/libopenTIDAL/blob/655528e26e4f3ee2c426c06ea5b8440cf27abc4a/README.md#example)"
+            "clientId": "4N3n6Q1x95LL5K7p",
+            "clientSecret": "4N3n6Q1x95LL5K7p;oKOXfJW371cX6xaZ0PyhgGNBdNLlBZd4AKKYougMjik=",
+            "valid": "True",
+            "from": "Test Key"
         },
         {
             "platform": "Fire TV",
@@ -99,10 +99,10 @@ def getVersion():
 
 
 # Load from gist
-try:
-    respond = requests.get('https://api.github.com/gists/48d01f5a24b4b7b37f19443977c22cd6')
-    if respond.status_code == 200:
-        content = respond.json()['files']['tidal-api-key.json']['content']
-        __API_KEYS__ = json.loads(content)
+#try:
+#    respond = requests.get('https://api.github.com/gists/48d01f5a24b4b7b37f19443977c22cd6')
+#    if respond.status_code == 200:
+#        content = respond.json()['files']['tidal-api-key.json']['content']
+#        __API_KEYS__ = json.loads(content)
 except:
     pass
