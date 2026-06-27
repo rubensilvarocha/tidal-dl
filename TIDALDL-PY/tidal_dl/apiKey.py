@@ -97,12 +97,12 @@ def getLimitIndexs():
 def getVersion():
     return __API_KEYS__['version']
 
-
+# Turn off self updating keys from gist
 # Load from gist
 #try:
 #    respond = requests.get('https://api.github.com/gists/48d01f5a24b4b7b37f19443977c22cd6')
 #    if respond.status_code == 200:
 #        content = respond.json()['files']['tidal-api-key.json']['content']
 #        __API_KEYS__ = json.loads(content)
-except:
-    pass
+#except:
+#    pass
